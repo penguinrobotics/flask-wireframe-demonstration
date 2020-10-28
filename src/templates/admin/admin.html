@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+	<div class="bg">
+		<div class="stack">
+			<h4>Vex TM IP: {{ip}}</h4>
+			<h4>Tournament Name: {{tourny}}</h4>
+			<a href="/admin/ip" class="stack-elt">Set TM IP</a>
+			<a href="/admin/name" class="stack-elt">Set Tourny Name</a>
+			<a href="/summary" class="stack-elt">Get Team Summary</a>
+		</div>
+	</div>
+</body>
+</html>

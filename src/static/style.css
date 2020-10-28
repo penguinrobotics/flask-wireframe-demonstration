@@ -1,0 +1,149 @@
+.stack {
+    margin: auto;
+    align-self: center;
+    align-items: center;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+a {
+    color: black;
+}
+
+.stack-elt {
+    margin: auto;
+    align-self: center;
+}
+
+.band {
+    margin: auto;
+    display: inline-block;
+    align-self: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.band-elt {
+    margin: auto;
+    align-self: center;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    height: 100%;
+}
+  
+.bg {
+    /* The image used */
+    background-color: rgba(0, 109, 202);
+
+    /* Full height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0%;
+    padding: 0%;
+}
+
+.stack input {
+    color: black; /* White text */
+    padding: 2% 2%; /* Some padding */
+    width: 50%; /* Set a width if needed */
+    display: block; /* Make the buttons appear below each other */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+#team-display {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.grid-item {
+    background-color: transparent;
+    color: red;
+    padding-left: 0.2em;
+    padding-right: 0.2em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    font-size: 30px;
+    text-align: center;
+}
+
+.summary {
+    background-color: transparent;
+    margin: auto;
+    align-self: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border-collapse: collapse;
+}
+
+.title-row {
+    font: bold;
+    color: white;
+}
+
+.title-row th {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.team-row {
+    background-color: transparent;
+    color: white;
+}
+
+.summary tr:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.summary tr:nth-child(odd) {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.team-row td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.window {
+    width: 75%;
+    height: 75%;
+    display: inline;
+    align-content: center;
+    align-self: center;
+}

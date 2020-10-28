@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<script src="{{ url_for('static', filename='display.js') }}"></script>
+
+<body>
+	<div class="bg">
+        <div class="stack">
+            <h1>Team Judging Status</h1>
+		    <div id="team-display">
+                {% for team in unjudged %}
+                    <div class="grid-item">{{team}}</div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</body>
+</html>

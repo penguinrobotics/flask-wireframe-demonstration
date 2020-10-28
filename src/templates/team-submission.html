@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+	<div class="bg">
+		<div class="stack">
+			<form>
+				<label class="stack-elt" for="username">Judge Name</label>
+				<input class="stack-elt" type="radio" name="username" value="{{name}}" checked>{{name}}</input> 
+				<input class="stack-elt" type="text" name="team" placeholder="team #"/>
+				<input class="stack-elt" type="text" name="score" placeholder="team score"/>
+				<input class="stack-elt" type="submit" name="submit"/>
+				<h1 class="stack-elt" style="color: red;">{{message}}</h1>
+			</form>
+		</div>
+	</div>
+</body>
+</html>

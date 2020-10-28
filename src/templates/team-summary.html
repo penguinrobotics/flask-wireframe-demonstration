@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+	<div class="bg">
+        <div class="window">
+		    <table class="summary">
+                <tr class="title-row">
+                    <th>Team Number</th>
+                    <th>Judged Score</th>
+                    <th>Tournament Rank</td>
+                    <th>Skills Rank</td>
+                    <th>WP</td>
+                    <th>SP</td>
+                </tr>
+                {% for team in teams %}
+                    <tr class="team-row">
+                        <td>{{team.team_number}}</td>
+                        <td>{{team.judge_score}}</td>
+                        <td>{{team.rank}}</td>
+                        <td>{{team.skills_rank}}</td>
+                        <td>{{team.wp}}</td>
+                        <td>{{team.sp}}</td>
+                    </tr>
+                {%endfor%}
+            </table>
+        </div>
+	</div>
+</body>
+</html>
