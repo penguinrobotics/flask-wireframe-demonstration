@@ -56,3 +56,8 @@ Known issues:
 - If VexTM cannot be reached, the system freezes on initialization.
 - Judge accounts cannot yet be created by a ui or configuration system.
 - While team data should be saved and loaded it does not work and will be overwritten when VexTM pulls data.
+
+Required Python Packages:
+These need to be installed to run the project
+- beautifulsoup4
+- flask
